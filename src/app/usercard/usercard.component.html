@@ -1,0 +1,26 @@
+
+    <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
+      <nz-card-meta
+        nzTitle="John Doe"
+        nzDescription="I like the way you work it 
+        No diggity 
+        I wanna bag it up"
+        [nzAvatar]="avatarTemplate"
+      ></nz-card-meta>
+    </nz-card>
+    <ng-template #avatarTemplate>
+      <nz-avatar nzSrc="./assets/face-2.jpg"></nz-avatar>
+    </ng-template>
+    <ng-template #coverTemplate>
+      <img alt="example" src="./assets/cover.jpg" />
+    </ng-template>
+    <ng-template #actionSetting>
+      <i nz-icon type="setting"></i>
+    </ng-template>
+    <ng-template #actionEdit>
+      <i nz-icon type="edit"></i>
+    </ng-template>
+    <ng-template #actionEllipsis>
+      <i nz-icon type="ellipsis"></i>
+    </ng-template>
+  
