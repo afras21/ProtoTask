@@ -10,12 +10,14 @@
         font-weight: 400;
       }
       #card {
-        height:400px;
-        width:300px;
+        height:450px;
+        widows: 100%;
         margin:0 auto;
         position:relative;
         z-index:1;
+        border-radius: 10px;
         perspective:600px;
+        background-color: #fff;
       }
       #front {
         border-radius:10px;
@@ -29,12 +31,15 @@
         box-shadow:0 0 10px rgba(0,0,0,.2);
       }
       #top-pic {
-        height:50%;
+        height:40%;
         width:100%;
-        background-image:url(https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46);
+        background-image:url("src/assets/cover.jpg");
         background-size:cover;
-        border-radius: 8px;
+        border-radius: 8px 8px 0px 0px;
 
+      }
+      .card1{
+        float: left;
       }
       
       #avatar {
@@ -45,7 +50,7 @@
         margin:-77px 0 0 -57px;
         border-radius:100%;
         box-shadow:0 0 0 3px rgba(255,255,255,.8),0 4px 5px rgba(107,5,0,.6),0 0 50px 50px rgba(255,255,255,.25);
-        background-image:url(http://0.gravatar.com/avatar/fa4df8540bab3cb38f7dfa60c6e0522c?size=2000);
+        background-image:url("src/assets/face-2.jpg");
         background-size:contain;
         position:absolute;
         z-index:1;
@@ -72,3 +77,11 @@
         font-size:18px;
         text-align:center;
       }
+      .ant-col-7 {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .ant-col-pull-17 {
+      right: 0px;
+  }
