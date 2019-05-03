@@ -9,6 +9,7 @@
       >
         <div class="logo">                    Wipadika Innovations
         </div>
+        <hr>
         <ul nz-menu [nzTheme]="'dark'"  style="    height: 100%;
         " [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
           <li nz-menu-item>
@@ -35,177 +36,73 @@
         </ul>
       </nz-sider>
       <nz-layout>
-        <nz-header style="background: #f0f2f5; padding:0;"></nz-header>
+        <nz-header style="background: #f0f2f5;
+        font-weight: 600;
+        margin: 5px 0px;
+        padding: 0px 14%;
+        color: #777;
+        height: 7.89%;
+        font-size: 20px; ">User Profile
+        </nz-header>
+        <hr class="userHr">
         <nz-content style="margin:24px 16px 0; ">
           <div style="padding:24px; background: #f0f2f5; min-height: 700px;">
 
-            <!-- user card -->
-            <!-- <app-usercard></app-usercard> -->
 
-            <div nz-row [nzGutter]="{ xs: 8, sm: 8, md: 8, lg: 8, xl: 8, xxl: 8 }">
-              <div nz-col [nzSpan]="17" [nzPush]="7">
-
-
-                  <div class="col-lg-8 col-md-7">
-                      <div class="card1">
-                          <div class="header">
-                              <h4 class="title">Edit Profile</h4>
-                          </div>
-                          <div class="content">
-                              <form>
-                                  <div class="row">
-                                      <div class="col-md-5">
-                                          <div class="form-group">
-                                              <label>Company</label>
-                                              <input type="text" class="form-control border-input" disabled="" placeholder="Company" value="ACME Inc.">
-                                          </div>
-                                      </div>
-                                      <div class="col-md-3">
-                                          <div class="form-group">
-                                              <label>Username</label>
-                                              <input type="text" class="form-control border-input" placeholder="Username" value="michael23">
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="form-group">
-                                              <label for="exampleInputEmail1">Email address</label>
-                                              <input type="email" class="form-control border-input" placeholder="Email">
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="row">
-                                      <div class="col-md-6">
-                                          <div class="form-group">
-                                              <label>First Name</label>
-                                              <input type="text" class="form-control border-input" placeholder="Company" value="Jon">
-                                          </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                          <div class="form-group">
-                                              <label>Last Name</label>
-                                              <input type="text" class="form-control border-input" placeholder="Last Name" value="Doe">
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="row">
-                                      <div class="col-md-12">
-                                          <div class="form-group">
-                                              <label>Address</label>
-                                              <input type="text" class="form-control border-input" placeholder="Home Address" value="Melbourne, Australia">
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="row">
-                                      <div class="col-md-4">
-                                          <div class="form-group">
-                                              <label>City</label>
-                                              <input type="text" class="form-control border-input" placeholder="City" value="Melbourne">
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="form-group">
-                                              <label>Country</label>
-                                              <input type="text" class="form-control border-input" placeholder="Country" value="Australia">
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="form-group">
-                                              <label>Postal Code</label>
-                                              <input type="number" class="form-control border-input" placeholder="ZIP Code">
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="row">
-                                      <div class="col-md-12">
-                                          <div class="form-group">
-                                              <label>About Me</label>
-                                              <textarea rows="5" class="form-control border-input" placeholder="Here can be your description" value="Mike">Oh so, your weak rhyme
-You doubt I'll bother, reading into it
-I'll probably won't, left to my own devices
-But that's the difference in our opinions.</textarea>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="text-center">
-                                      <button type="submit" class="btn btn-info btn-fill btn-wd">Update Profile</button>
-                                  </div>
-                                  <div class="clearfix"></div>
-                              </form>
-                          </div>
-                      </div>
-                  </div>
-
-
-
-
-                <!-- col-18 col-push-6 -->
-              </div>
-              <div nz-col [nzSpan]="7" [nzPull]="17">
-                
-
-
-
-            <div id="wrapper">
-              <div id="content">
-                <div id="card">
+            <div class="row">
+              <div class="column">
+                <div class="card">                <div id="card">
                   <div id="front">
                     <div id="arrow"><i class="fa fa-arrow-left"></i></div>
                     <div id="top-pic"></div>
                     <div id="avatar"></div>
                     <div id="info-box">
                       <div class="info">
-                        <h1>Jesse Couch</h1>
-                        <h2>Digital Creative</h2>
+                        <h2>Jon Doe</h2>
+                        <h3>@JonDoe</h3>
+                        <div>"I like the way you work it 
+                          No diggity 
+                          I wanna bag it up
+                          
+                          
+                          "<br><br></div>
+                        <hr class="userHr">
                       </div>
                     </div>
                     <div id="social-bar">
-                      <a href="https://www.facebook.com/designcouch" target="_blank">
-                        <i class="fa fa-facebook"></i>
-                      </a>
-                      <a href="https://www.twitter.com/designcouch" target="_blank">
-                      <i class="fa fa-twitter"></i>
-                      </a>
-                      <a href="https://www.dribbble.com/designcouch" target="_blank">
-                      <i class="fa fa-dribbble"></i>
-                      </a>
-                      <a href="https://www.codepen.io/designcouch/public">
-                      <i class="fa fa-codepen"></i>
-                      </a>
-                      
-                      <a href="javascript:void" class="more-info">
-                        <i class="fa fa-user"></i>
-                      </a>
+                      <table style="width:100%">
+                        <tr>
+                          <th>12</th>
+                          <th>2Gb</th>
+                          <th>24,6$</th>
+                        </tr>
+
+                        <tr>
+                            <th>Files</th>
+                            <th>Used</th>
+                            <th>Spent</th>
+                          </tr>
+
+                      </table>
                     </div>
                   </div>
-                  <div id="social-bar">
-                    <a href="https://www.facebook.com/designcouch" target="_blank">
-                      <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="https://www.twitter.com/designcouch" target="_blank">
-                    <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://www.dribbble.com/designcouch" target="_blank">
-                    <i class="fa fa-dribbble"></i>
-                    </a>
-                    <a href="https://www.codepen.io/designcouch/public">
-                    <i class="fa fa-codepen"></i>
-                    </a>
-                    <a href="javascript:void" class="more-info">
-                      <i class="fa fa-undo"></i>
-                    </a>
-                  </div>
-                </div>
-                <div id="background">
-                  <div id="background-image"></div>
-                </div>
+            
+                </div></div>
               </div>
+              <div class="column">
+                <div class="card">..</div>
+              </div>
+
             </div>
-          </div>
-              </div>
+
+
+
+
+
+
+
+
+        
             </div>
 
 

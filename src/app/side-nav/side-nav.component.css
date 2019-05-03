@@ -2,12 +2,13 @@
       .logo {
         height: 78px;
         background: #ffffff;
-        padding: 4px 0px;
+        padding: 21px 0px;
         line-height: 30px;
         text-align: center;
         display: block;
         font-size: 18px;
         font-weight: 400;
+        font-family: 'Muli', "Helvetica", Arial, sans-serif;
       }
       #card {
         height:450px;
@@ -57,13 +58,14 @@
       }
 
       #info-box {
-        height:50%;
-        width:100%;
-        position:absolute;
-        display:table;
-        left:0;
-        bottom:0;
-        padding:50px;
+        height: 52%;
+        width: 100%;
+        position: absolute;
+        display: table;
+        left: 0;
+        bottom: 0;
+        padding: 50px;
+    
       }
 
       #social-bar {
@@ -72,16 +74,94 @@
         position:absolute;
         bottom:0;
         left:0;
-        
-        line-height:50px;
-        font-size:18px;
         text-align:center;
       }
-      .ant-col-7 {
-        display: block;
-        box-sizing: border-box;
-        width: 100%;
+      
+      h2{
+        text-align: center;
+        margin-bottom: 0em;
+      }
+      h3{
+        text-align: center;
+        color: darkgrey;
+        margin-bottom: 0.5em;
+        font-size: 0.9em;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        .ant-col-7 {
+          margin-top: 5%;
+          display: block;
+          box-sizing: border-box;
+          width: 100%;
+      }
+      .ant-col-pull-17 {
+        right: 0px;
     }
-    .ant-col-pull-17 {
-      right: 0px;
+
+    .ant-col-17 {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
   }
+  .ant-col-pull-7 {
+    right: 0px;
+}
+      }
+hr{
+  height: 0;
+  overflow: visible;
+  border: 0;
+  border-color: #F1EAE0;
+  border-top: 1px solid #cecaca ;
+  margin: 0px 15px;
+}
+.userHr{
+  height: 0;
+  overflow: visible;
+  border: 0;
+  border-color: #F1EAE0;
+  border-top: 1px solid #cecaca ;
+  margin: 0px 0px;
+}
+
+
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.column .card {
+  padding: 0px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 1024px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
